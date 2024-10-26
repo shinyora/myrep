@@ -1,0 +1,10 @@
+name: github action sample
+on: workflow_dispatch
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a multi-lines script
+        run: |
+          echo "Hello github actions sample"
+          date
